@@ -14,10 +14,7 @@ end
 
 def find_the_cheese(list_of_foods)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  cheese_types.each do |item|
-    if list_of_foods.include?(item)
-      return item
-    end
+  list_of_foods.find do |item|
+    cheese_types.include?(item)
   end
-  nil 
 end
