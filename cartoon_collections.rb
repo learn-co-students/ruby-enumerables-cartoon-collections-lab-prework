@@ -1,7 +1,7 @@
 # each with index and regex
 def roll_call_dwarves (names)
   names.each.with_index(1) do |dwarf,index|
-    puts "/#{index}. #{dwarf}/"
+    puts "#{index}. #{dwarf}"
   end
 end
 
